@@ -1,0 +1,348 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Header */
+.logo{
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: -0.033em;
+    text-transform: uppercase;
+}
+
+.simply{
+    font-style: italic;
+}
+
+.nav-list a{
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.017em;
+}
+/* Main */
+/* Hero */
+.hero-section{
+    border-radius: 30px;
+    background-color: rgba(17, 17, 17, 0.60);
+}
+
+.hero-title{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.052em;
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-button, .hm-link{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 40px;
+    line-height: normal;
+}
+
+.hero-button{
+    border-radius: 100px;
+    background-color: #FD9222;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus{
+    color: #FD9222;
+    background-color: #FCF1E0;
+}
+
+.scroll-down{
+    display: flex;
+    gap: 14px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.026em;
+}
+
+.scroll-down:hover,
+.scroll-down:focus{
+    color: #FD9222;
+}
+
+.scroll-down span{
+    display: flex;
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    align-items: center;
+}
+
+.hm-link{
+    border-radius: 100px;
+    border: 1px solid #FFF;
+}
+
+.hm-link:hover,
+.hm-link:focus{
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
+/*Benefits*/
+
+.benefits{
+    background-color: #1E1823;
+}
+
+.section-title{
+    color: #111;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-title span{
+    color: #FD9222;
+}
+
+.benefits-card-title{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+    line-height: normal;
+}
+
+.text{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.017em;
+}
+/* Ingredients */
+
+.ingredients-title{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.0175em;
+    text-transform: uppercase;
+}
+
+/*How it's made*/
+
+.how-it-made-title{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.how-it-made-list{
+    list-style:disc;
+    padding-left: 40px;
+}
+
+.how-it-made-list li{
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.0175em;
+}
+
+/* Products */
+
+.products-card{
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+}
+
+.products-card-title{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.022em;
+    text-transform: uppercase;
+}
+
+.products-card-text{
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: -0.015em;
+}
+
+.products-card-button{
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: #FAFAFA;
+    padding: 8px 20px;
+}
+
+/* Our bestsellers */
+.bestsellers-card{
+    background-color: #FFF;
+}
+
+.bestsellers-card img{
+    border-radius: 15px 15px 0px 0px;
+    display: block;
+}
+
+.bestsellers-card-info{
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.10);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+    border-left: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: #FFF;
+    padding: 28px 0;
+}
+
+.bestsellers-card-title{
+    text-transform: uppercase;
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.022em;
+}
+
+/* Rewiews */
+
+.rewiews-card-title{
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.rewiews-card-text{
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.017em;
+}
+
+.rewiews-button{
+    display: flex;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: #FAFAFA;
+    padding: 14px 40px;
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.rewiews-button:focus,
+.rewiews-button:hover{
+    background-color: #FD9222;
+    color: #fff;
+}
+
+/* Footer */
+footer{
+    background-color: #1E1823;
+}
+
+.footer-title{
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.035em;
+}
+
+.footer-title span{
+    color:#FD9222;
+}
+
+.sn-title, .address-title{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.address-list a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.017em;
+    font-style: normal;
+}
+
+.footer-nav-list a{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.017em;
+}
+
+hr{
+   border:1px solid rgba(255, 255, 255, 0.10); 
+   margin: 0;
+}
