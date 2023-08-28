@@ -31,6 +31,10 @@ button{
     cursor: pointer;
 }
 
+svg{
+    display: block;
+}
+
 /* Header */
 .header{
     padding: 20px 0;
@@ -69,11 +73,26 @@ button{
     gap: 14px;
 }
 
-.header-list li{
+.header-list-link{
+    display: block;
     padding: 8px;
     border-radius: 10px;
     outline: 1px solid rgba(17, 17, 17, 0.10);
-    align-items: flex-start;
+    transition: outline 250ms ease-in-out;
+}
+
+.header-list-link:hover,
+.header-list-link:focus{
+    outline: 1px solid rgba(253, 146, 34, 0.10);
+}
+
+.header-icon{
+    transition: fill 250ms ease-in-out;
+}
+
+.header-list-link:hover .header-icon,
+.header-list-link:focus .header-icon{
+    fill: #FD9222;
 }
 
 .nav-list{
@@ -86,22 +105,52 @@ button{
     font-style: italic;
 }
 
-
-.nav-list a{
+.nav-links{
+    position: relative;
     color: #111;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.017em;
     padding: 32px 0;
+    transition: color 250ms ease-in-out;
 }
+
+.nav-links:hover,
+.nav-links:focus{
+    color: #fd9322;
+}
+
+.nav-links::after{
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 250ms ease-in-out;
+}
+
+.nav-links:hover::after,
+.nav-links:focus::after{
+    background-color: #fd9322a9;
+}
+
 /* Main */
 /* Hero */
 .hero-section{
+    max-width: 1136px;
     border-radius: 30px;
     background-color: rgba(17, 17, 17, 0.60);
     padding: 381px 0px 40px;
-    margin: 0 32px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to top,
+        rgba(17, 17, 17, 0.40),
+        rgba(17, 17, 17, 0.40)
+    ), url('../img/hero-img.jpg');
 }
 
 .hero-section .container{
@@ -130,7 +179,7 @@ button{
     gap: 14px;
 }
 
-.hero-button, .hm-link{
+.hero-button, .hero-link{
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -142,6 +191,7 @@ button{
     border-radius: 100px;
     background-color: #FD9222;
     border: none;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out;
 }
 
 .hero-button:hover,
@@ -158,6 +208,7 @@ button{
     font-weight: 500;
     line-height: 38px;
     letter-spacing: -0.026em;
+    transition: color .25s ease-in-out;
 }
 
 .scroll-down:hover,
@@ -165,28 +216,35 @@ button{
     color: #FD9222;
 }
 
-.scroll-down span{
-    display: flex;
-    text-align: center;
+.scroll-down-icon{
     padding: 8px;
     background-color: #fff;
+    fill:#FD9222;
     width: 38px;
     height: 38px;
-    flex-shrink: 0;
     border-radius: 100px;
-    align-items: center;
+    transition: fill .25s ease-in-out, background-color .25s ease-in-out;
 }
 
-.hm-link{
+.scroll-down:hover .scroll-down-icon,
+.scroll-down:focus .scroll-down-icon{
+    fill: #fff;
+    background-color: #FD9222;
+}
+
+.hero-link{
     border-radius: 100px;
     border: 1px solid #FFF;
+    transition: color .25s ease-in-out, border .25s ease-in-out;
 }
 
-.hm-link:hover,
-.hm-link:focus{
+.hero-link:hover,
+.hero-link:focus{
     border: 1px solid #FD9222;
     color: #FD9222;
 }
+/* Hero */
+
 /*Benefits*/
 
 .benefits{
@@ -236,6 +294,25 @@ button{
     width: calc((100% - 176px) / 3);
 }
 
+.benefits-card-line{
+    align-self: center;
+}
+
+.benefits-line{
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.benefits-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    border-radius: 365px;
+}
+
 .benefits-card-title{
     color: #FFF;
     font-size: 18px;
@@ -280,6 +357,7 @@ button{
 }
 
 .ingredients-card{
+    position: relative;
     width: calc((100% - 96px) / 4);
     padding: 28px 23px;
     border-radius: 15px;
@@ -298,6 +376,17 @@ button{
 .ingredients-card:nth-child(4n-1){
     background-color: #1E1823;
     color: #FFF;
+}
+
+.ingredients-icon{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    stroke: #fafafa;
+}
+
+.ingredients-card:nth-child(2n) .ingredients-icon{
+    stroke:#FD9222;
 }
 
 /*How it's made*/
@@ -406,6 +495,10 @@ button{
     width: calc((100% - 32px) / 3);
 }
 
+.bestsellers-card:hover .overlay-text{
+    transform: translateY(0%);
+}
+
 .bestsellers-card img{
     border-radius: 15px 15px 0 0;
 }
@@ -429,6 +522,30 @@ button{
     letter-spacing: -0.022em;
 }
 
+.bestsellers-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 178px 40px 0;
+    
+    border-radius: 15px 15px 0px 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+    backdrop-filter: blur(7.5px);
+    transform: translateY(100%);
+    transition: transform .25s ease-in;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.0175em;
+}
+
 /* Rewiews */
 .rewiews{
     margin: 120px 0;
@@ -440,9 +557,26 @@ button{
 }
 
 .rewiews-card{
-    width: calc((100% - 56px) / 3);
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: calc((100% - 56px) / 3);
+    padding-top: 42px;
+}
+
+.rewiews-card-background {
+    border-radius: 15px;
+    outline: 1px solid rgba(17, 17, 17, 0.10);
+    box-shadow: 0px 9.049315452575684px 100px 0px rgba(17, 17, 17, 0.03);
+    background-color: #fff;
+    padding: 104px 24px 24px;
+}
+
+.rewiews-card-info {
+    position: absolute;
+    height: 100%;
+    top: 0;
 }
 
 .rewiews-card-title{
@@ -469,19 +603,6 @@ button{
     margin: 0 auto;
 }
 
-.rewiews-card-background{
-    border-radius: 15px;
-    outline: 1px solid rgba(17, 17, 17, 0.10);
-    background-color: #fff;
-    padding: 104px 24px 24px;
-    z-index: 1;
-}
-
-.rewiews-card-info{
-    z-index: 2;
-    margin-bottom: -82px;
-}
-
 .rewiews-button {
     display: flex;
     border-radius: 100px;
@@ -494,6 +615,7 @@ button{
     font-weight: 600;
     line-height: normal;
     margin: 50px auto 0;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out;
 }
 
 .rewiews-button:focus,
@@ -511,12 +633,16 @@ footer{
 
 .footer-container{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.footer-info-block{
+.footer-list-block{
     margin-right: 50px;
-    min-width: 112px;
+}
+
+.footer-info-container{
+    display: flex;
 }
 
 .footer-title{
@@ -524,7 +650,7 @@ footer{
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.035em;
-    margin-right: 510px;
+    max-width: 300px;
 }
 
 .footer-title span{
@@ -541,6 +667,29 @@ footer{
 .sn-list{
     display: flex;
     gap: 14px;
+}
+
+.footer-list-link{
+    display: block;
+    padding: 8px;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, 0.10);
+    transition: outline .25s ease-in-out;
+}
+
+.footer-icon{
+    fill: #fff;
+    transition: fill .25s ease-in-out;
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus{
+    outline: 1px solid rgba(253, 146, 34, 0.10);
+}
+
+.footer-list-link:hover .footer-icon,
+.footer-list-link:focus .footer-icon{
+    fill: #FD9222;
 }
 
 .address-list a{
@@ -568,12 +717,18 @@ footer a{
     color: #FFF;
 }
 
-.footer-nav-list li{
+.footer-nav-links{
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.017em;
+    transition: color .25s ease-in-out;
+}
+
+.footer-nav-links:hover,
+.footer-nav-links:focus{
+    color:#FD9222;
 }
 
 hr{
