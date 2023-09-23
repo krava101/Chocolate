@@ -151,7 +151,8 @@
         <div class="container">
           <div class="ingredients-title-block">
             <h2 class="section-title">
-              It all adds up to one exceptional <span>taste</span> sensation
+              It all adds up to one exceptional
+              <span class="orange">taste</span> sensation
             </h2>
           </div>
           <ul class="ingredients-list">
@@ -245,7 +246,9 @@
       <!-- How it's made -->
       <section class="how-it-made" id="how-it-made">
         <div class="container">
-          <h2 class="section-title">How it’s <span>made</span>?</h2>
+          <h2 class="section-title">
+            How it’s <span class="orange">made</span>?
+          </h2>
           <div class="how-it-made-container">
             <span>
               <img
@@ -286,7 +289,9 @@
       <!-- Our products -->
       <section class="products">
         <div class="container">
-          <h2 class="section-title">Our <span>products</span></h2>
+          <h2 class="section-title">
+            Our <span class="orange">products</span>
+          </h2>
           <ul class="products-list">
             <li class="products-card">
               <img
@@ -382,7 +387,7 @@
       <!-- Our bestsellers -->
       <section class="bestsellers">
         <div class="container">
-          <h2 class="section-title"><span>Top</span> sellers</h2>
+          <h2 class="section-title"><span class="orange">Top</span> sellers</h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-card">
               <div class="bestsellers-overlay">
@@ -449,7 +454,9 @@
       <!-- Rewiews -->
       <section class="rewiews" id="rewiews">
         <div class="container">
-          <h2 class="section-title"><span>Chocolate</span> is loved</h2>
+          <h2 class="section-title">
+            <span class="orange">Chocolate</span> is loved
+          </h2>
           <ul class="rewiews-list">
             <li class="rewiews-card">
               <div class="rewiews-card-info">
@@ -508,7 +515,7 @@
               </div>
             </li>
           </ul>
-          <button type="button" class="rewiews-button">Leave a rewiew</button>
+          <label class="rewiews-button" for="modal-open">Leave a rewiew</label>
         </div>
       </section>
     </main>
@@ -516,9 +523,9 @@
     <footer>
       <div class="container">
         <div class="footer-container">
-          <h2 class="footer-title">
+          <p class="footer-title">
             <span>Chocolate</span> a delicious cure for a bad day
-          </h2>
+          </p>
           <div class="footer-info-container">
             <div class="footer-list-block">
               <h3 class="sn-title">Social networks</h3>
@@ -551,10 +558,14 @@
               <address>
                 <ul class="address-list">
                   <li>
-                    <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                    <a class="address-list-link" href="tel:+380684439426"
+                      >+380 (68) 443-94-26</a
+                    >
                   </li>
                   <li>
-                    <a href="mailto:simplychoc@gmail.com"
+                    <a
+                      class="address-list-link"
+                      href="mailto:simplychoc@gmail.com"
                       >simplychoc@gmail.com</a
                     >
                   </li>
@@ -563,19 +574,116 @@
             </div>
           </div>
         </div>
-        <hr />
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li><a href="./index.html" class="footer-nav-links">Home</a></li>
-            <li>
-              <a href="#how-it-made" class="footer-nav-links">How it’s made?</a>
-            </li>
-            <li>
-              <a href="#rewiews" class="footer-nav-links">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
+        <hr class="footer-line" />
+        <div class="footer-nav-form-wrapper">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li><a href="./index.html" class="footer-nav-links">Home</a></li>
+              <li>
+                <a href="#how-it-made" class="footer-nav-links"
+                  >How it’s made?</a
+                >
+              </li>
+              <li>
+                <a href="#rewiews" class="footer-nav-links"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form">
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button class="footer-input-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
+    <input
+      class="modal-open"
+      type="radio"
+      id="modal-open"
+      name="modal-switch"
+    />
+    <div class="backdrop">
+      <div class="modal">
+        <input class="modal-close" type="radio" name="modal-switch" />
+        <form class="modal-form">
+          <button class="modal-close-btn" type="button">
+            <svg class="modal-close-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <p class="modal-title">
+            leave a review about <span class="orange">our chocolate</span>
+          </p>
+          <ul class="modal-form-list">
+            <li class="modal-list-item">
+              <label class="modal-label" for="user-name">Name</label>
+              <input
+                class="modal-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-user"></use>
+              </svg>
+            </li>
+            <li class="modal-list-item">
+              <label class="modal-label" for="user-email">Email</label>
+              <input
+                class="modal-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-mail"></use>
+              </svg>
+            </li>
+            <li class="modal-list-item">
+              <label class="modal-label" for="user-phone">Phone number</label>
+              <input
+                class="modal-input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+            </li>
+            <li class="modal-list-item">
+              <label class="modal-label" for="user-text">Comment</label>
+              <textarea
+                class="modal-textarea"
+                type="textarea"
+                id="user-text"
+                name="user-text"
+                placeholder="Enter text"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="modal-checkbox-wrapper">
+            <input class="modal-checkbox" type="checkbox" id="modal-checkbox" />
+            <svg class="custom-checkbox-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-modal-checkbox"></use>
+            </svg>
+            <label class="modal-label checkbox-label" for="modal-checkbox">
+              <span class="custom-checkbox"></span>
+              <p class="checkbox-label-text">
+                I accept the terms and conditions of the
+              </p>
+              <a class="checkbox-label-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
