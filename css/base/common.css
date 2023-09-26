@@ -1,0 +1,48 @@
+:root{
+    --orange: #FD9222;
+    --violet: #1E1823;
+    --black: #111;
+    --white: #fff;
+    --cloud: #fafafa;
+    --beige: #FCF1E0;
+    --gray: #4C4C4C;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAFAFA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+svg {
+    display: block;
+}

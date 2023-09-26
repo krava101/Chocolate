@@ -1,46 +1,7 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAFAFA;
-}
 
-h1,h2,h3,h4,h5,h6,p{
-    margin: 0;
-}
-
-ul{
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-.container{
-    width: 1136px;
-    margin: 0 auto;
-}
-
-img{
-    display: block;
-    margin: 0;
-}
-
-button{
-    cursor: pointer;
-}
-
-svg{
-    display: block;
-}
-
-.orange{
-    color: #FD9222;
-}
 
 /* Header */
-.header{
+/* .header{
     padding: 20px 0;
 }
 
@@ -140,11 +101,11 @@ svg{
 .nav-links:hover::after,
 .nav-links:focus::after{
     background-color: #fd9322a9;
-}
+} */
 
 /* Main */
 /* Hero */
-.hero-section{
+/* .hero-section{
     max-width: 1136px;
     border-radius: 30px;
     background-color: rgba(17, 17, 17, 0.60);
@@ -246,12 +207,12 @@ svg{
 .hero-link:focus{
     outline: 1px solid #FD9222;
     color: #FD9222;
-}
+} */
 /* Hero */
 
 /*Benefits*/
 
-.benefits{
+/* .benefits{
     background-color: #1E1823;
     margin: 80px 0 120px;
     padding: 50px 0;
@@ -329,9 +290,9 @@ svg{
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.017em;
-}
+} */
 /* Ingredients */
-.ingredients{
+/* .ingredients{
     margin-bottom: 120px;
 }
 
@@ -388,10 +349,10 @@ svg{
 
 .ingredients-card:nth-child(2n) .ingredients-icon{
     stroke:#FD9222;
-}
+} */
 
 /*How it's made*/
-.how-it-made{
+/* .how-it-made{
     margin-bottom: 120px;
     color: #111;
 }
@@ -429,10 +390,10 @@ svg{
 
 .how-it-made-list li:not(:last-child){
     margin-bottom: 24px;
-}
+} */
 
 /* Products */
-.products{
+/* .products{
     margin-bottom: 120px;
 }
 
@@ -482,10 +443,10 @@ svg{
     background-color: #FAFAFA;
     padding: 8px 20px;
     margin: 18px 0 0;
-}
+} */
 
 /* Our bestsellers */
-.bestsellers-list{
+/* .bestsellers-list{
     display: flex;
     gap: 16px;
 }
@@ -545,10 +506,10 @@ svg{
     font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.0175em;
-}
+} */
 
 /* Rewiews */
-.rewiews{
+/* .rewiews{
     margin: 120px 0;
 }
 
@@ -627,10 +588,10 @@ svg{
 .rewiews-button:hover {
     background-color: #FD9222;
     color: #fff;
-}
+} */
 
 /* Footer */
-footer{
+/* footer{
     background-color: #1E1823;
     padding: 50px 0;
     color: #FFF;
@@ -809,11 +770,11 @@ hr{
     border: none;
     border-top: 1px solid #fff;
     opacity: 0.2;
-}
+} */
 
 /* Backdrop & modal window */
 
-.backdrop.is-open{
+/* .backdrop.is-open{
     visibility: visible;
     pointer-events: auto;
     opacity: 1;
@@ -1047,4 +1008,4 @@ hr{
     visibility: visible;
     pointer-events: auto;
     opacity: 1;
-}
+} */

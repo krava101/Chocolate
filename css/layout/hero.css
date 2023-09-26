@@ -1,0 +1,211 @@
+.hero{
+    border-radius: 30px;
+    margin: 0 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% center;
+}
+
+.hero-container {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.hero-title{
+    max-width: 484px;
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+}
+
+.hero-wrapper{
+    margin-top: 32px;
+}
+
+.hero-btn-wrapper {
+    display: flex;
+    gap: 14px;
+}
+
+.hero-btn,
+.hero-link {
+    display: grid;
+    place-items: center;
+    height: 45px;
+    padding: 0;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-btn {
+    width: 144px;
+    border-radius: 100px;
+    background-color: var(--orange);
+    border: none;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--orange);
+    background-color: var(--beige);
+}
+
+.hero-link {
+    width: 183px;
+    border-radius: 100px;
+    border: 1px solid var(--white);
+    transition: color .25s ease-in-out, border-color .25s ease-in-out;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    border-color:var(--orange);
+    color: var(--orange);
+    outline: none;
+}
+
+.scroll-down {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.285;
+    letter-spacing: -0.03em;
+    transition: color .25s ease-in-out;
+}
+
+.scroll-down:hover,
+.scroll-down:focus {
+    color: var(--orange);
+}
+
+.scroll-down-btn {
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    transition: background-color .25s ease-in-out;
+}
+
+.scroll-down-icon{
+    fill: var(--orange);  
+    transition: fill .25s ease-in-out;
+}
+
+.scroll-down:hover .scroll-down-icon,
+.scroll-down:focus .scroll-down-icon {
+    fill: var(--white);
+}
+
+.scroll-down:hover .scroll-down-btn,
+.scroll-down:focus .scroll-down-btn {
+    background-color: var(--orange);
+}
+
+@media screen and (max-width: 767px) {
+    .hero{
+       padding: 395px 0 20px;
+       min-width: 335px;
+       padding-bottom: 20px;
+       background-image: linear-gradient(to top,
+           rgba(17, 17, 17, 0.40),
+           rgba(17, 17, 17, 0.40)), url('../../img/hero/hero-bg-tablet-mobile.jpg');
+    }
+
+    .hero-container{
+        padding: 0 20px;
+    }
+
+    .hero-title{
+        font-size: 20px;
+        line-height: 1.2;
+        max-width: 290px;
+    }
+
+    .hero-btn{
+        width: 120px;
+        height: 41px;
+    }
+
+    .hero-link{
+        width: 159px;
+        height: 41px;
+    }
+
+    .scroll-down{
+        font-size: 12px;
+        margin-top: 32px;
+    }
+
+    .scroll-down-btn{
+        width: 28px;
+        height: 28px;
+    }
+
+    .scroll-down-icon{
+        width: 16px;
+        height: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .hero {
+    padding: 671px 0 40px;
+    min-width: 704px;
+    background-image: linear-gradient(to top,
+        rgba(17, 17, 17, 0.40),
+        rgba(17, 17, 17, 0.40)), url('../../img/hero/hero-bg-tablet-mobile.jpg');
+    }
+
+
+    .hero-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1167px),
+screen and (min-resolution: 2dppx) and (max-width: 1167px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 1167px){
+    .hero{
+        background-image:linear-gradient(to top,
+                rgba(17, 17, 17, 0.40),
+                rgba(17, 17, 17, 0.40))
+                , url('../../img/hero/hero-bg-tablet-mobile@2x.jpg');
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .hero {
+    padding: 381px 0 40px;
+    min-width: 704px;
+    background-image: linear-gradient(to top,
+            rgba(17, 17, 17, 0.40),
+            rgba(17, 17, 17, 0.40)), url('../../img/hero/hero-bg-desktop.jpg');
+    }
+
+    .hero-container{
+        max-width: 1168px;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1168px),
+screen and (min-resolution: 2dppx) and (min-width: 1168px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1168px) {
+    .hero {
+        background-image: linear-gradient(to top,
+                rgba(17, 17, 17, 0.40),
+                rgba(17, 17, 17, 0.40)), url('../../img/hero/hero-bg-desktop@2x.jpg');
+    }
+}
+

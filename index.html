@@ -15,47 +15,52 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
-            ><span class="simply">simply </span>chocolate
+            ><span class="logo-part">simply</span>chocolate
             <svg class="icon" width="24" height="24">
               <use href="./img/icons.svg#icon-chocolate"></use>
             </svg>
           </a>
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-links">Home</a></li>
+            <li><a href="./index.html" class="header-nav-link">Home</a></li>
             <li>
-              <a href="#how-it-made" class="nav-links">How it’s made?</a>
+              <a href="#how-it-made" class="header-nav-link">How it’s made?</a>
             </li>
             <li>
-              <a href="#rewiews" class="nav-links">Chocolate is loved</a>
+              <a href="#rewiews" class="header-nav-link">Chocolate is loved</a>
             </li>
           </ul>
+          <button class="open-menu-btn" type="button">
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./img/icons.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="header-list">
-          <li>
-            <a href="" class="header-list-link">
-              <svg class="icon header-icon" width="24" height="24">
+        <ul class="header-media-list">
+          <li class="header-media-item">
+            <a href="" class="header-media-link">
+              <svg class="icon header-media-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="" class="header-list-link">
-              <svg class="icon header-icon" width="24" height="24">
+          <li class="header-media-item">
+            <a href="" class="header-media-link">
+              <svg class="icon header-media-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li>
-            <a href="" class="header-list-link">
-              <svg class="icon header-icon" width="24" height="24">
+          <li class="header-media-item">
+            <a href="" class="header-media-link">
+              <svg class="icon header-media-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -65,28 +70,30 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
-        <div class="container">
+      <section class="hero">
+        <div class="hero-container container">
           <h1 class="hero-title">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <div class="hero-container">
-            <div class="hero-buttons-container">
-              <button type="button" class="hero-button">Buy now</button>
+          <div class="hero-wrapper">
+            <div class="hero-btn-wrapper">
+              <button class="hero-btn" type="button">Buy now</button>
               <a href="#how-it-made" class="hero-link">How it’s made</a>
             </div>
-            <a href="#benefits" class="scroll-down">
+            <a class="scroll-down" href="#benefits">
               scroll down
-              <svg class="scroll-down-icon" width="22" height="22">
-                <use href="./img/icons.svg#icon-scroll-down"></use>
-              </svg>
+              <span class="scroll-down-btn">
+                <svg class="scroll-down-icon" width="22" height="22">
+                  <use href="./img/icons.svg#icon-scroll-down"></use>
+                </svg>
+              </span>
             </a>
           </div>
         </div>
       </section>
       <!-- Our benefits -->
-      <section class="benefits" id="benefits">
+      <!-- <section class="benefits" id="benefits">
         <div class="container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
           <ul class="benefits-list">
@@ -145,9 +152,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Ingredients -->
-      <section class="ingredients">
+      <!-- <section class="ingredients">
         <div class="container">
           <div class="ingredients-title-block">
             <h2 class="section-title">
@@ -242,9 +249,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- How it's made -->
-      <section class="how-it-made" id="how-it-made">
+      <!-- <section class="how-it-made" id="how-it-made">
         <div class="container">
           <h2 class="section-title">
             How it’s <span class="orange">made</span>?
@@ -285,9 +292,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Our products -->
-      <section class="products">
+      <!-- <section class="products">
         <div class="container">
           <h2 class="section-title">
             Our <span class="orange">products</span>
@@ -383,9 +390,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our bestsellers -->
-      <section class="bestsellers">
+      <!-- <section class="bestsellers">
         <div class="container">
           <h2 class="section-title"><span class="orange">Top</span> sellers</h2>
           <ul class="bestsellers-list">
@@ -450,9 +457,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Rewiews -->
-      <section class="rewiews" id="rewiews">
+      <!-- <section class="rewiews" id="rewiews">
         <div class="container">
           <h2 class="section-title">
             <span class="orange">Chocolate</span> is loved
@@ -517,10 +524,10 @@
           </ul>
           <label class="rewiews-button" for="modal-open">Leave a rewiew</label>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <div class="container">
         <div class="footer-container">
           <p class="footer-title">
@@ -684,6 +691,49 @@
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <button class="close-menu-btn" type="button">
+        <svg class="close-menu-icon" width="28" height="28">
+          <use href="./img/icons.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav-list">
+        <li class="menu-nav-item">
+          <a href="./index.html" class="menu-nav-link">Home</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="#how-it-made" class="menu-nav-link">How it’s made?</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="#rewiews" class="menu-nav-link">Chocolate is loved</a>
+        </li>
+      </ul>
+      <ul class="menu-media-list">
+        <li>
+          <a href="" class="menu-media-link">
+            <svg class="icon menu-media-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="menu-media-link">
+            <svg class="icon menu-media-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="menu-media-link">
+            <svg class="icon menu-media-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
