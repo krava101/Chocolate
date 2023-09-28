@@ -93,57 +93,49 @@
         </div>
       </section>
       <!-- Our benefits -->
-      <!-- <section class="benefits" id="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <h2 class="section-title visually-hidden">Our benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-card">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-wrapper">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./img/icons.svg#icon-chocolate-bar"></use>
                 </svg>
               </div>
               <h3 class="benefits-card-title">Unsurpassed taste</h3>
-              <p class="text">
+              <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
                 perfection, each bite is a decadent experience that simply
                 cannot be matched. Savor the richness and complexity of our
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li class="benefits-card-line">
-              <svg class="benefits-line" width="1" height="124">
-                <use href="./img/icons.svg#icon-benefits-line"></use>
-              </svg>
-            </li>
+            <li class="benefits-card-line"></li>
             <li class="benefits-card">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-wrapper">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./img/icons.svg#icon-coin"></use>
                 </svg>
               </div>
               <h3 class="benefits-card-title">Affordable price</h3>
-              <p class="text">
-                Indulge in high-quality chocolate witho ut breaking the bank
-                with Simply Chocolate's selection of affordable treats. Enjoy
+              <p class="benefits-text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
                 sacrificing taste or quality. Browse our selection and indulge
                 in affordable luxury today.
               </p>
             </li>
-            <li class="benefits-card-line">
-              <svg class="benefits-line" width="1" height="124">
-                <use href="./img/icons.svg#icon-benefits-line"></use>
-              </svg>
-            </li>
+            <li class="benefits-card-line"></li>
             <li class="benefits-card">
-              <div class="benefits-icon-container">
+              <div class="benefits-icon-wrapper">
                 <svg class="benefits-icon" width="32" height="32">
                   <use href="./img/icons.svg#icon-spoon"></use>
                 </svg>
               </div>
               <h3 class="benefits-card-title">Own production</h3>
-              <p class="text">
+              <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
                 finest ingredients to handcrafting each piece, our attention to
@@ -152,26 +144,29 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Ingredients -->
-      <!-- <section class="ingredients">
+      <section class="ingredients">
         <div class="container">
-          <div class="ingredients-title-block">
-            <h2 class="section-title">
-              It all adds up to one exceptional
-              <span class="orange">taste</span> sensation
-            </h2>
-          </div>
+          <h2 class="section-title">
+            It all adds up to one exceptional
+            <span class="orange">taste</span> sensation
+          </h2>
           <ul class="ingredients-list">
             <li class="ingredients-card">
               <svg class="ingredients-icon" width="24" height="24">
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/milk-chococlate.png"
-                alt="milk chocolate"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/milk-chococlate-desktop.png          214w,
+                  ./img/ingredients/milk-chococlate-desktop@2x.png       428w,
+                  ./img/ingredients/milk-chococlate-tablet-mobile.png    236w,
+                  ./img/ingredients/milk-chococlate-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/milk-chococlate-desktop.png"
+                alt="Milk chocolate"
               />
               <h3 class="ingredients-title">milk chocolate</h3>
             </li>
@@ -180,10 +175,15 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/milk.png"
-                alt="milk"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/milk-desktop.png          214w,
+                  ./img/ingredients/milk-desktop@2x.png       428w,
+                  ./img/ingredients/milk-tablet-mobile.png    236w,
+                  ./img/ingredients/milk-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/milk-desktop.png"
+                alt="Milk"
               />
               <h3 class="ingredients-title">milk</h3>
             </li>
@@ -192,10 +192,15 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/nuts.png"
-                alt="nuts"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/nuts-desktop.png          214w,
+                  ./img/ingredients/nuts-desktop@2x.png       428w,
+                  ./img/ingredients/nuts-tablet-mobile.png    236w,
+                  ./img/ingredients/nuts-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/nuts-desktop.png"
+                alt="Nuts"
               />
               <h3 class="ingredients-title">nuts</h3>
             </li>
@@ -204,10 +209,15 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/semi-sweet-chocolate.png"
-                alt="semi - sweet chocolate"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/semi-desktop.png          214w,
+                  ./img/ingredients/semi-desktop@2x.png       428w,
+                  ./img/ingredients/semi-tablet-mobile.png    236w,
+                  ./img/ingredients/semi-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/semi-desktop.png"
+                alt="Semi sweet chocolate"
               />
               <h3 class="ingredients-title">semi - sweet chocolate</h3>
             </li>
@@ -216,10 +226,15 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/cacao.png"
-                alt="cacao"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/cacao-desktop.png          214w,
+                  ./img/ingredients/cacao-desktop@2x.png       428w,
+                  ./img/ingredients/cacao-tablet-mobile.png    236w,
+                  ./img/ingredients/cacao-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/cacao-desktop.png"
+                alt="Cacao"
               />
               <h3 class="ingredients-title">cacao</h3>
             </li>
@@ -228,10 +243,15 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/raspberry.png"
-                alt="raspberry"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/raspberry-desktop.png          214w,
+                  ./img/ingredients/raspberry-desktop@2x.png       428w,
+                  ./img/ingredients/raspberry-tablet-mobile.png    236w,
+                  ./img/ingredients/raspberry-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/raspberry-desktop.png"
+                alt="Raspberry"
               />
               <h3 class="ingredients-title">raspberry</h3>
             </li>
@@ -240,16 +260,21 @@
                 <use href="./img/icons.svg#icon-arrow"></use>
               </svg>
               <img
-                src="./img/ingredients/coconut-oil.png"
-                alt="coconut oil"
-                width="214"
-                height="160"
+                srcset="
+                  ./img/ingredients/coconut-desktop.png          214w,
+                  ./img/ingredients/coconut-desktop@2x.png       428w,
+                  ./img/ingredients/coconut-tablet-mobile.png    236w,
+                  ./img/ingredients/coconut-tablet-mobile@2x.png 472w
+                "
+                sizes="(min-width: 1168px) 214px, (max-width: 1167px) 236px"
+                src="./img/ingredients/coconut-desktop.png"
+                alt="Coconut oil"
               />
               <h3 class="ingredients-title">coconut oil</h3>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- How it's made -->
       <!-- <section class="how-it-made" id="how-it-made">
         <div class="container">

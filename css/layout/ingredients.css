@@ -1,0 +1,97 @@
+.ingredients-list {
+    display: flex;
+}
+
+.ingredients-card {
+    position: relative;
+    border-radius: 15px;
+    padding: 32px 50px 28px;
+}
+
+.ingredients-card:nth-child(2n) {
+    outline: 1px solid #FD9222;
+    background-color: #FFF;
+}
+
+.ingredients-card:nth-child(4n+1) {
+    background-color: #FD9222;
+    color: #FFF;
+}
+
+.ingredients-card:nth-child(4n-1) {
+    background-color: #1E1823;
+    color: #FFF;
+}
+
+.ingredients-icon {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    stroke: #fafafa;
+}
+
+.ingredients-card:nth-child(2n) .ingredients-icon {
+    stroke: #FD9222;
+}
+
+.ingredients-title {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.285;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+    .ingredients{
+        padding: 80px 0 40px;
+    }
+
+    .ingredients-list{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ingredients-card{
+        width: 335px;
+    }
+
+    .ingredients-card:nth-child(n+5){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ingredients{
+        padding: 100px 0 50px;
+    }
+
+    .ingredients-list{
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .ingredients-card {
+        flex-basis:  calc((100% - 32px)/2);
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .ingredients{
+        padding: 120px 0 60px;
+    }
+
+    .ingredients-list {
+        gap: 24px 32px;
+    }
+
+    .ingredients-card {
+        flex-basis: calc((100% - 96px) / 4);
+        padding: 28px 23px;
+    }
+
+    .ingredients-title{
+        margin-top: 36px;
+    }
+}
