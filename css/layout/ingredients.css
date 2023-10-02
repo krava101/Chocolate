@@ -54,11 +54,18 @@
     }
 
     .ingredients-card{
-        width: 335px;
+        max-width: 335px;
     }
 
     .ingredients-card:nth-child(n+5){
         display: none;
+    }
+
+    .ingredients-title{
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
     }
 }
 

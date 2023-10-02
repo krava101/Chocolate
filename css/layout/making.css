@@ -27,7 +27,7 @@
 
 .making-list{
     list-style-image: url('../../img/making/making-list-marker.svg');
-    padding-left: 18px;
+    padding-left: 14px;
 }
 
 .making-item{
@@ -48,8 +48,8 @@
     }
 
     .making-video-wrapper{
-        width: 335px;
-        height: 500px;
+        max-width: 335px;
+        aspect-ratio: 67/100;
     }
 
     .making-info-container{
