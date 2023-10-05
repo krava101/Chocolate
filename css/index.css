@@ -8,3 +8,8 @@
 @import "./layout/benefits.css";
 @import "./layout/ingredients.css";
 @import "./layout/making.css";
+@import "./layout/products.css";
+
+:root{
+    scroll-behavior: smooth;
+}
