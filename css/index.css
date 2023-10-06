@@ -9,6 +9,7 @@
 @import "./layout/ingredients.css";
 @import "./layout/making.css";
 @import "./layout/products.css";
+@import "./layout/bestsellers.css";
 
 :root{
     scroll-behavior: smooth;

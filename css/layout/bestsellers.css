@@ -1,0 +1,103 @@
+.bestsellers{
+    padding: 40px 0;
+}
+
+.bestsellers-list{
+    display: flex;
+    align-self: center;
+    gap: 16px;
+}
+
+.bestsellers-card{
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bestsellers-card-info{
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.10);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.10);
+    border-left: 1px solid rgba(17, 17, 17, 0.10);
+    background-color: var(--white);
+}
+
+.bestsellers-card-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bestsellers-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.bestsellers-img{
+    border-radius: 15px 15px 0 0;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    padding: 168px 40px 0;
+
+    border-radius: 15px 15px 0px 0px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+    backdrop-filter: blur(7.5px);
+    transform: translateY(100%);
+    transition: transform .25s ease-in;
+
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.285;
+    letter-spacing: -0.02em;
+    transition: transform 250ms ease-in-out;
+}
+
+.bestsellers-card:hover .overlay-text,
+.bestsellers-card:focus .overlay-text {
+    transform: translateY(0%);
+}
+
+@media screen and (max-width: 767px) {
+    .bestsellers-list{
+        overflow-x: hidden;
+    }
+
+    .bestsellers-card:not(:first-child){
+        display: none;
+    }
+
+    .bestsellers-card-info {
+        padding: 24px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bestsellers{
+        padding: 50px 0;
+    }
+
+    .bestsellers-card:last-child{
+        display: none;
+    }
+
+    .bestsellers-card-info{
+        padding: 28px 0;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .bestsellers{
+        padding: 60px 0;
+    }
+
+    .bestsellers-card:last-child{
+        display: block;
+    }
+}
