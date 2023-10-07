@@ -1,0 +1,138 @@
+.reviews{
+    padding: 40px 0;
+}
+
+.reviews-list{
+    display: flex;
+    gap: 16px;
+}
+
+.reviews-card{
+    position: relative;
+    padding-top: 40px;
+}
+
+.reviews-card-info{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+}
+
+.reviews-card-title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+}
+
+.reviews-card-background{
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    box-shadow: 0px 9.04932px 100px 0px rgba(17, 17, 17, 0.03);
+}
+
+.reviews-card-text{
+    color: rgba(17, 17, 17, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.285;
+    letter-spacing: -0.02em;
+}
+
+.reviews-card-img{
+    border-radius: 50%;
+}
+
+.reviews-btn{
+    display: block;
+    width: 222px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: transparent;
+
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 50px auto 0;
+    transition: background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.reviews-btn:hover,
+.reviews-btn:focus{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+@media screen and (max-width: 767px) {
+    .reviews-card:not(:first-child){
+        display: none;
+    }
+
+    .reviews-card-background{
+        padding: 104px 18px 20px;
+        max-width: 336px;
+    }
+
+    .reviews-card-text {
+        max-height: 76px;
+        overflow: scroll;
+    }
+
+    .reviews-btn{
+        width: 165px;
+        height: 41px;
+        font-size: 14px;
+        margin: 32px auto 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .reviews{
+        padding: 50px 0;
+    }
+
+    .reviews-card{
+        flex-basis: calc((100% - 16px) / 2);
+    }
+
+    .reviews-card:last-child{
+        display: none;
+    }
+
+    .reviews-card-background{
+        padding: 104px 16px 24px;
+    }
+}
+
+@media screen and (min-width: 1168px) {
+    .reviews {
+        padding: 60px 0;
+    }
+
+    .reviews-list{
+        gap: 28px;
+    }
+
+    .reviews-card {
+        flex-basis: calc((100% - 56px) / 3);
+    }
+
+    .reviews-card:last-child {
+        display: block;
+    }
+
+    .reviews-card-background {
+        padding: 104px 16px 24px;
+    }
+}
