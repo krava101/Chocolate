@@ -11,7 +11,4 @@
 @import "./layout/products.css";
 @import "./layout/bestsellers.css";
 @import "./layout/reviews.css";
-
-:root{
-    scroll-behavior: smooth;
-}
+@import "./layout/footer.css";
