@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -37,7 +38,7 @@
               <a href="#reviews" class="header-nav-link">Chocolate is loved</a>
             </li>
           </ul>
-          <button class="open-menu-btn" type="button">
+          <button class="open-menu-btn" type="button" id="open-menu-btn">
             <svg class="menu-btn-icon" width="28" height="28">
               <use href="./img/icons.svg#icon-mobile-menu"></use>
             </svg>
@@ -581,7 +582,9 @@
               </div>
             </li>
           </ul>
-          <button class="reviews-btn" type="button">Leave a rewiew</button>
+          <button class="reviews-btn" type="submit" id="reviews-btn">
+            Leave a rewiew
+          </button>
         </div>
       </section>
     </main>
@@ -670,10 +673,11 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop">
+    <!-- Modal -->
+    <div class="backdrop" id="backdrop">
       <div class="modal">
         <form class="modal-form">
-          <button class="modal-close-btn" type="button">
+          <button class="modal-close-btn" type="button" id="modal-close-btn">
             <svg class="modal-close-icon" width="24" height="24">
               <use href="./img/icons.svg#icon-modal-close"></use>
             </svg>
@@ -734,35 +738,43 @@
             <svg class="custom-checkbox-icon" width="20" height="20">
               <use href="./img/icons.svg#icon-modal-checkbox"></use>
             </svg>
-            <label class="modal-label checkbox-label" for="modal-checkbox">
-              <span class="custom-checkbox"></span>
+            <label class="modal-checkbox-label" for="modal-checkbox">
+              <span class="custom-checkbox"> </span>
               <p class="checkbox-label-text">
                 I accept the terms and conditions of the
+                <a class="checkbox-label-link orange" href="">Privacy Policy</a>
               </p>
-              <a class="checkbox-label-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu">
-      <button class="close-menu-btn" type="button">
+    <div class="mobile-menu" id="mobile-menu">
+      <button
+        class="close-menu-btn close-menu-btns"
+        type="button"
+        id="close-menu-btn"
+      >
         <svg class="close-menu-icon" width="28" height="28">
           <use href="./img/icons.svg#icon-modal-close"></use>
         </svg>
       </button>
       <ul class="menu-nav-list">
         <li class="menu-nav-item">
-          <a href="./index.html" class="menu-nav-link">Home</a>
+          <a href="./index.html" class="menu-nav-link close-menu-btns">Home</a>
         </li>
         <li class="menu-nav-item">
-          <a href="#making" class="menu-nav-link">How it’s made?</a>
+          <a href="#making" class="menu-nav-link close-menu-btns"
+            >How it’s made?</a
+          >
         </li>
         <li class="menu-nav-item">
-          <a href="#reviews" class="menu-nav-link">Chocolate is loved</a>
+          <a href="#reviews" class="menu-nav-link close-menu-btns"
+            >Chocolate is loved</a
+          >
         </li>
       </ul>
       <ul class="menu-media-list">

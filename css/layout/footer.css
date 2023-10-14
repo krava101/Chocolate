@@ -192,6 +192,10 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+
+    .footer-nav-list{
+        gap: 16px;
+    }
 }
 
 @media screen and (min-width: 1168px) {
@@ -204,5 +208,9 @@ footer{
     .footer-input-btn{
         width: 137px;
         height: 52px;
+    }
+
+    .footer-nav-list {
+        gap: 24px;
     }
 }
