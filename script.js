@@ -26,4 +26,20 @@ openModalBtn.addEventListener("click", function() {
 
 closeModalBtn.addEventListener("click", function () {
     backdrop.classList.remove("is-open")
-})
+});
+
+var openReviews = document.getElementById("open-reviews-list-btn");
+var closeReviews = document.getElementById("close-reviews-list-btn");
+var reviewsList = document.getElementById("reviews-list");
+
+openReviews.addEventListener("click", function () {
+    reviewsList.classList.add("is-active");
+    closeReviews.style.display = "flex";
+    openReviews.style.display = "none";
+});
+
+closeReviews.addEventListener("click", function () {
+    reviewsList.classList.remove("is-active");
+    openReviews.style.display = "flex";
+    closeReviews.style.display = "none";
+});

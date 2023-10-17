@@ -2,6 +2,10 @@
     padding: 80px 0;
 }
 
+.reviews-list-wrapper{
+    position: relative;
+}
+
 .reviews-list{
     display: flex;
     gap: 16px;
@@ -74,10 +78,40 @@
     color: var(--white);
 }
 
+.open-reviews-list-btn, .close-reviews-list-btn{
+    position: absolute;
+    bottom: -30px;
+    left: 48%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 50px auto 0;
+    transition: all 250ms ease-in-out;
+}
+
+.close-reviews-list-btn{
+   display: none;
+}
+
+.open-reviews-list-icon{
+    fill: var(--orange);
+}
+
+.close-reviews-list-icon{
+    fill: var(--orange);
+    transform: rotate(180deg);
+}
+
+
 @media screen and (max-width: 767px) {
-    .reviews-card:not(:first-child){
-        display: none;
-    }
 
     .reviews-card-background{
         padding: 104px 18px 20px;
@@ -93,13 +127,47 @@
         width: 165px;
         height: 41px;
         font-size: 14px;
-        margin: 32px auto 0;
+        margin: 48px auto 0;
+    }
+
+    .reviews-list {
+        flex-direction: column;
+        overflow-y: hidden;
+        height: 240px;
+        gap: 32px 16px;
+        transition: height .35s ease-in-out;
+    }
+
+    .reviews-list.is-active {
+        overflow-y: auto;
+        height: 512px;
+        transition: height .25s ease-in-out;
+    }
+    
+    .open-reviews-list-btn,
+    .close-reviews-list-btn{
+        font-size: 14px;
+        bottom: -26px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .reviews{
         padding: 100px 0;
+    }
+
+    .reviews-list{
+        flex-wrap: wrap;
+        overflow-y: hidden;
+        max-height: 240px;
+        gap: 32px 16px;
+        transition: max-height .35s ease-in-out;
+    }
+
+    .reviews-list.is-active{
+        overflow-y: auto;
+        max-height: 512px;
+        transition: max-height .25s ease-in-out;
     }
 
     .reviews-card{
